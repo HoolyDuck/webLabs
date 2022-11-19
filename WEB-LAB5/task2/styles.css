@@ -1,0 +1,59 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: white;
+    background: linear-gradient(to left, rgb(46, 47, 35), rgb(76, 80, 92));
+  }
+  
+
+img {
+    max-width: 4rem;
+    min-height: 4rem;
+    background: white;
+    border: 4px solid black;
+    border-radius: 1rem;
+
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+.image-choosing {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.shown-image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.shown-image {
+    max-width: 10rem;
+}
+
+@keyframes fade-animation {
+    0% {
+        filter: blur(0px);
+    }
+
+    50% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    100% {
+        filter: blur(0px);
+    }
+
+}

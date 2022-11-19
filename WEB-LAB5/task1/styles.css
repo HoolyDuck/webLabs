@@ -1,0 +1,57 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: white;
+  background: linear-gradient(to left, rgb(47, 35, 35), rgb(92, 76, 76));
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-box {
+  max-width: 20rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.height-box {
+  max-width: 20rem;
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.width-box {
+  max-width: 20rem;
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.gen-calc-box {
+  min-width: 5rem;
+  padding: 0.4rem;
+  margin: 0.2rem;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"] {
+  max-width: 20rem;
+  background: linear-gradient(to left, rgb(196, 141, 141), rgb(206, 168, 168));
+}
+
+.calc-name {
+    background-image: linear-gradient(to left, rgb(255, 9, 9), rgb(255, 128, 0));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}

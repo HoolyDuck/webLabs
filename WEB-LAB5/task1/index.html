@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="input-box">
+      <div class="height-box">
+        <label for="height-field">Height</label>
+        <input id="height-field" type="number"  />
+      </div>
+
+      <div class="width-box">
+        <label for="width-field">Width</label>
+        <input id="width-field" type="number"  />
+      </div>
+    </div>
+      <div class="calc-box">
+        <div class="perimeter-box gen-calc-box">
+          <p class="calc-name" >Perimeter</p>
+          <p id="perimeter">0</p>
+        </div>
+        <div class="area-box gen-calc-box">
+          <p class="calc-name" >Area</p>
+          <p id="area">0</p>
+        </div>
+
+        <div class="diagonal-box gen-calc-box">
+          <p class="calc-name" >Diagonal</p>
+          <p id="diagonal">0</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

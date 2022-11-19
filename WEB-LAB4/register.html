@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body>
+<header>
+    <div class="logo-wrapper">
+        <img class="logo"
+             src="images/cat-vibing.gif"
+             alt="WEB-3 logo"/>
+        <img class="logo logo-copy"
+             src="images/cat-vibing.gif" alt="WEB-3 logo"/>
+    </div>
+    <div class="nav-bar">
+        <a href="news.html">News</a>
+        <a href="login.html">Login</a>
+        <a href="https://google.com">Settings</a>
+
+    </div>
+
+
+</header>
+<div class="register-wrapper">
+<div class="login-box-wrapper">
+    <div class="login-box">
+        <p class="welcome-back-text sign-up">Sign up</p>
+        <form id="register-form">
+            <label for="login-field">
+                Email
+            </label>
+            <input class="text-input"
+                   id="login-field"
+                   type="email"
+                   placeholder="Email">
+            <p id="error-login" class="error-text">Check your email</p>
+          <label for="num-field">
+            Number
+          </label>
+          <input class="text-input"
+                 id="num-field"
+                 type="text"
+          placeholder="Number">
+            <p id="error-num" class="error-text">Check your number</p>
+
+            <label for="password-field">
+                Password
+            </label>
+            <input class="text-input"
+                   id="password-field"
+                   type="password"
+                   placeholder="Password">
+            <p id="error-password" class="error-text">Password too short</p>
+
+            <label for="name-field">
+                Name
+            </label>
+            <input class="text-input"
+                   id="name-field"
+                   type="text"
+                   placeholder="Name"
+            required="required">
+            <p id="error-name" class="error-text">Enter correct name</p>
+            <label for="surname-field">
+                Surname
+            </label>
+            <input class="text-input"
+                   id="surname-field"
+                   type="text"
+                   placeholder="Surname"
+                   required="required">
+            <p id="error-surname" class="error-text">Enter correct surname</p>
+            <label for="date-field">
+                Date of birth
+            </label>
+
+            <input id="date-field"
+                   class="text-input "
+                   type="date"
+                   value="1970-01-01">
+            <p id="error-date" class="error-text">Invalid date</p>
+          <div>
+            <label for="radio-inputm">
+              Male
+            </label>
+            <input type="radio" id="radio-inputm" name="radio-sex" value="Male" required="required" checked>
+            <label for="radio-inputf">
+              Female
+            </label>
+            <input type="radio" id="radio-inputf" value="Female" name="radio-sex">
+          </div>
+            <label for="group-select">
+                Group
+            </label>
+            <select class="text-input" id="group-select">
+                <option value="IA11">ia11</option>
+                <option value="IA12">ia12</option>
+                <option value="IA13">ia13</option>
+                <option value="IA14">ia14</option>
+            </select>
+
+
+            <button type="button" id="register-button">Register</button>
+        </form>
+
+    </div>
+
+
+
+</div>
+    <div class="student-table">
+        <table class="table" id="reg-table">
+            <tr>
+                <th>#</th>
+                <th>Surname</th>
+                <th>First</th>
+                <th>Sex</th>
+                <th>Email</th>
+                <th>Number</th>
+                <th>Date of birth</th>
+                <th>Group</th>
+            </tr>
+        </table>
+    </div>
+    <button class="delete-button" id="delete-button">Delete</button>
+    <button class="duplicate-button" id="duplicate-button">Duplicate</button>
+
+</div>
+
+
+
+<footer>
+
+    <div class="footer-media">
+        <h4> Media links </h4>
+        <a href="https://google.com"> Twitter </a>
+        <a href="https://google.com">Discord</a>
+        <a href="https://google.com">Youtube</a>
+    </div>
+    <div class="footer-media">
+        <h4>Support (me) us</h4>
+        <a href="https://google.com">Paypal</a>
+        <a href="https://google.com">Patreon</a>
+    </div>
+    <div class="footer-media">
+        <h4> Terms of service </h4>
+        <a href="https://google.com">License</a>
+        <a href="https://google.com">Agreement</a>
+    </div>
+    <div class="footer-media ">
+        <h4> Contact us </h4>
+        <div class="footer-media-contacts">
+            <a href="tel:000-000-0000">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="mailto:ilovenigg@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://telegram.me/h_onk"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://wa.me/+000000000"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+</footer>
+<script src="https://unpkg.com/imask"></script>
+
+<script src="script.js" ></script>
+
+</body>
+</html>

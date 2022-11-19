@@ -1,0 +1,259 @@
+@import './base.css';
+
+#app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-weight: normal;
+
+}
+
+a,
+.green {
+    text-decoration: none;
+    color: hsla(160, 100%, 37%, 1);
+    transition: 0.4s;
+}
+
+@media (hover: hover) {
+    a:hover {
+        background-color: hsla(160, 100%, 37%, 0.2);
+    }
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reg-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+input{
+    background: transparent;
+    padding: .5rem;
+    border: 1px solid #8f8f8f;
+    border-radius: .1rem;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    max-width: 12rem;
+    padding: .3rem;
+}
+
+.genders {
+    display: flex;
+    justify-content: space-around;
+}
+
+.error-text {
+    font-size: .7rem;
+    color: red;
+}
+
+.btn {
+    padding: .4rem;
+    margin: 1rem;
+    max-width: 10rem;
+    background: linear-gradient(to top, #95e2e5, #b4f9ff);
+    border: 0;
+    border-radius: 5px;
+    transition: .5s;
+
+}
+
+.btn:hover {
+    color: white;
+background: linear-gradient(to top, #8f70ff, #6702ff);
+
+}
+table {
+    max-width: 70vw;
+    overflow-x: auto;
+    border: 1px solid grey;
+    border-collapse: collapse;
+
+}
+
+
+
+table td, th {
+    padding: .3rem;
+    border: 1px solid grey;
+    transition: 1s;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to left, #2b2654, #15132a);
+}
+
+
+/*[[[[[[[SITE LOGO]]]]]]]*/
+
+
+.logo-wrapper {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.logo {
+    margin: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+@keyframes logo-animation {
+    10% {
+        scale: 1.2;
+        opacity: 50%;
+    }
+    20% {
+        opacity: 50%;
+        scale: 1.4;
+        rotate: 10deg;
+        filter: hue-rotate(-90deg) contrast(2);
+    }
+    30% {
+        filter: hue-rotate(150deg) contrast(2);
+        scale: 1.2;
+    }
+    60% {
+        opacity: 50%;
+        scale: 1;
+        filter: hue-rotate(269deg) contrast(2);
+    }
+}
+
+.logo-copy {
+    animation-name: logo-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 0.9375s;
+    animation-timing-function: ease-in-out;
+}
+
+
+/*[[[[[[[NAV BAR BUTTONS]]]]]]]*/
+
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nav-bar a {
+    font-size: 1.2rem;
+    color: white;
+    padding: 1em 3em;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: .2s;
+}
+
+.nav-bar a:hover {
+    background: rgba(255, 255, 255, 10%);
+}
+
+
+@media (max-width: 50rem) {
+    .nav-bar a {
+        padding: 1.5rem;
+    }
+
+    html {
+        font-size: 14px;
+    }
+}
+
+
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "media1 media2 media3 media4";
+    background: linear-gradient(to bottom, #2b2654, #15132a);
+    min-height: 2.5rem;
+}
+
+
+.footer-media a {
+    text-decoration: none;
+    color: white;
+}
+
+footer:nth-child(1) {
+    grid-area: media1;
+}
+
+footer:nth-child(2) {
+    grid-area: media2;
+}
+
+footer:nth-child(3) {
+    grid-area: media3;
+}
+
+footer:nth-child(4) {
+    grid-area: media4;
+}
+
+
+.footer-media {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.footer-media h4 {
+    padding-left: 1rem;
+    font-size: 1.35rem;
+}
+
+.footer-media a {
+    padding-left: 1rem;
+    padding-bottom: 0.4rem;
+}
+
+
+.footer-media-contacts {
+    display: flex;
+    justify-content: stretch;
+    flex-direction: row;
+}
+
+
+@media (max-width: 50rem) {
+    footer {
+        grid-template-areas:
+         "media1 media2"
+         "media3 media4";
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+
+    .footer-media a {
+        padding: 0.7rem;
+
+    }
+}
